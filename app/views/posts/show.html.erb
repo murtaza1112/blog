@@ -1,0 +1,7 @@
+<h1>Single Post</h1>
+<h2><%=@post1.title%></h2>
+<p><%=@post1.body%></p>
+<p><small><%=@post1.created_at.strftime("%b %d. %T") %></small></p>
+
+<%= link_to "Edit",edit_post_path %>
+<%= link_to "Delete",@post,:confirm =>"Are u sure?", :method=>:delete %>

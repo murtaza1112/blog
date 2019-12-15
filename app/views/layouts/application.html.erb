@@ -10,6 +10,10 @@
   </head>
 
   <body>
+    <! all messages stored >
+    <% flash.each do |key,value| %>
+     <p><%= value %></p>
+    <%end%>
     <%= yield %>
   </body>
 </html>
